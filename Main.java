@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Please input your number");
         Scanner UserNumber = new Scanner(System.in);
         int UserInput = UserNumber.nextInt();
-        System.out.println(UserInput%2);
+        //System.out.println(UserInput%2);
         if (UserInput%2 == 0){
            
             if (UserInput == 2){
@@ -16,7 +16,10 @@ public class Main {
             }
         }
         else {
-            System.out.println("This number is a prime number");
+           for(int i = 2; i < UserInput; i++){
+                //System.out.println(i);
+                System.out.println((double)UserInput / i);
+           }
         }
 
 }

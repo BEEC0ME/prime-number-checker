@@ -18,7 +18,14 @@ public class Main {
         else {
            for(int i = 2; i < UserInput; i++){
                 //System.out.println(i);
-                System.out.println((double)UserInput / i);
+                int DivisionAnswer = UserInput % i;
+                System.out.println(DivisionAnswer);
+                if (DivisionAnswer == 0){
+                    System.out.println("This number is not a prime number");
+                }
+                else if (DivisionAnswer == 2){
+                    System.out.println("This number is a prime number");
+                }
            }
         }
 
